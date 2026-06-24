@@ -4,4 +4,11 @@ node_modules/
 .env.local
 dist/
 build/
+.chromium/
+artifacts/
+*.zip
+
+# IDE
+.vscode/
+.idea/
 .DS_Store
