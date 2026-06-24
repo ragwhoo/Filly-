@@ -8,9 +8,10 @@
     "package": "plasmo package"
   },
   "dependencies": {
-    "plasmo": "0.89.0",
+    "plasmo": "^0.90.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.35.2"
   },
   "devDependencies": {
     "@types/react": "18.2.0",
@@ -24,6 +25,8 @@
     "name": "Filly",
     "description": "One-click form autofill",
     "version": "1.0.0",
-    "permissions": ["storage"]
+    "permissions": [
+      "storage"
+    ]
   }
 }
