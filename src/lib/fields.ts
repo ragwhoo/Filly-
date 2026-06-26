@@ -13,6 +13,16 @@ export function getLabelText(element: HTMLElement): string | undefined {
     const text = parent.textContent.replace(element.textContent || '', '').trim()
     if (text) return text
   }
+  const prev = element.previousElementSibling
+  if (prev?.textContent) {
+    const text = prev.textContent.trim()
+    if (text) return text
+  }
+  const parentPrev = element.parentElement?.previousElementSibling
+  if (parentPrev?.textContent) {
+    const text = parentPrev.textContent.trim()
+    if (text) return text
+  }
   return undefined
 }
 

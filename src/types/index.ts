@@ -1,9 +1,12 @@
 export interface Profile {
+  title: string
   firstName: string
+  middleName: string
   lastName: string
   fullName: string
   email: string
   phone: string
+  fax: string
   address: string
   city: string
   state: string
@@ -18,6 +21,14 @@ export interface Profile {
   currentCompany: string
   currentRole: string
   resumeUrl: string
+  userId: string
+  sex: string
+  driversLicense: string
+  age: string
+  birthPlace: string
+  income: string
+  customMessage: string
+  comments: string
 }
 
 export type ProfileKey = keyof Profile
@@ -49,11 +60,14 @@ export interface FillResponse {
 }
 
 export interface SerializableProfile {
+  title?: string
   firstName?: string
+  middleName?: string
   lastName?: string
   fullName?: string
   email?: string
   phone?: string
+  fax?: string
   address?: string
   city?: string
   state?: string
@@ -68,4 +82,12 @@ export interface SerializableProfile {
   currentCompany?: string
   currentRole?: string
   resumeUrl?: string
+  userId?: string
+  sex?: string
+  driversLicense?: string
+  age?: string
+  birthPlace?: string
+  income?: string
+  customMessage?: string
+  comments?: string
 }

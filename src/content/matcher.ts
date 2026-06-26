@@ -12,7 +12,7 @@ const WEIGHTS: Record<string, number> = {
   dataset: 20,
 }
 
-const MIN_SCORE = 60
+const MIN_SCORE = 40
 
 export class AliasMatchingStrategy implements MatchingStrategy {
   match(field: FieldCandidate): ProfileKey | null {

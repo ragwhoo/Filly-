@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  overflow: hidden;
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  min-height: 100px;
+  background: linear-gradient(135deg, #eff6ff, #faf5ff, #fdf2f8);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}

@@ -13,8 +13,13 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": [
+        "src/*"
+      ]
     }
   },
-  "include": ["src"]
+  "include": [
+    ".plasmo/index.d.ts",
+    "src"
+  ]
 }
